@@ -1,0 +1,49 @@
+body {
+background-color: #191d26;
+
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #bda888;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 20px;
+font-family: 'Gill Sans';
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ff5534;
+  color: white;
+}
+.polaroid {
+  width: 25%;
+  background-color: #f26f63;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ margin: 50px;
+    display: inline-block;
+}
+.polaroid:hover{
+    transform: scale(1.01);
+    transition: transform .2s ease;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+p{
+font-family: 'Gill Sans';
+    font-size: 20px;
+color: #f2f2f2;
+
+}
