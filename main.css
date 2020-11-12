@@ -99,6 +99,12 @@ color: #f2f2f2;
     font-size: 40px;
 color: #f2f2f2;
     font-style: italic;
+    margin: 20px;
+    
+}
+.subHead img{
+    margin: 10px;
+    float: right;
 }
 .smallHead{
     font-family: 'Gill Sans';
