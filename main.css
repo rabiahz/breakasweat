@@ -1,9 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 body {
 background-color: #191d26;
-    background-image: url(http://gph.is/2gvZPLW)
+    background-image: url(http://gph.is/2gvZPLW);
+    width: 100%;
+}
+@font-face{
+    font-family:"Gill Sans";
+    src: local("Gill Sans Std"),
+        url("GillSansStd.otf")
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: #bda888;
   overflow: hidden;
@@ -14,10 +23,11 @@ background-color: #191d26;
   float: right;
   color: #ffffff;
   text-align: center;
-  padding: 15px 60px;
+  padding: 30px 50px;
   text-decoration: none;
-  font-size: 20px;
-font-family: 'Gill Sans';
+  font-size: 1.25em;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif; 
+    
 }
 
 /* Change the color of links on hover */
@@ -25,10 +35,45 @@ font-family: 'Gill Sans';
   background-color: #f26f63;
   color: black;
 }
+.topnav img{
+ width: 80%;   
+}
+.logo {
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: -20px;
+    margin-left: -40px;
+    
+    
+}
+.logo a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #bfa78a;
+  color: white;
+  cursor: pointer;
+  padding: 13px 18px;
+  border-radius: 3px;
+}
+
+#myBtn:hover {
+  background-color: #f26f63;
+}
 
 .center{
-    font-family: 'Gill Sans';
-    font-size: 100px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;     font-size: 6.25em;
     color: white;
 text-align: center;
     position: absolute;
@@ -55,49 +100,62 @@ text-align: center;
     transition: transform .2s ease;
 }
 
-.containerE {
-  text-align: center;
-  padding: 10px 20px;
+.polaroid a{
+    cursor: url('cursor.cur'), auto;
+    text-decoration: none;
 }
+
   
 p{
-font-family: 'Gill Sans';
-    font-size: 20px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;     font-size: 20px;
 color: #f2f2f2;
 margin: 20px;
     text-align: center;
 }
 .p1{
-font-family: 'Gill Sans';
-    font-size: 20px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;    font-size: 20px;
 color: #f2f2f2;
 margin: 20px;
     margin-top: 40px;
 }
+
 
 .tile{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
     padding: 20px;
+    
 }
+
+.tile img {
+     border: 4px solid #ff5534;
+    margin-top: 40px;
+}
+
+.tile video{
+         border: 4px solid #ff5534;
+        margin-top: 40px;
+
+
+}
+
 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+    
 }
 .head{
-    font-family: 'Gill Sans';
-    font-size: 100px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;    font-size: 100px;
 color: #f2f2f2;
     font-style: italic;
     margin-top:40px;
     text-align: center;
 }
 .subHead{
-    font-family: 'Gill Sans';
-    font-size: 40px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;     font-size: 40px;
 color: #f2f2f2;
     font-style: italic;
     margin: 20px;
@@ -108,8 +166,7 @@ color: #f2f2f2;
     float: right;
 }
 .smallHead{
-    font-family: 'Gill Sans';
-    font-size: 20px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;    font-size: 20px;
 color: #f2f2f2;
     letter-spacing: 2px;
 }
@@ -121,6 +178,8 @@ color: #f2f2f2;
 
 .column img {
   margin-top: 12px;
+border: 2px solid #ff5534;
+
 }
 
 /* Clear floats after the columns */
@@ -143,8 +202,70 @@ display: table;
 figcaption{
     display: table-caption;
     caption-side: top;
-    font-family: 'Gill Sans';
-    font-size: 50px;
+font-family: "Gill Sans","Gill Sans MT","Calibri",sans-serif;     font-size: 50px;
     font-style: italic;
     color: #f2f2f2;
+}
+.center a:link, a:visited {
+  background-color: transparent;
+    border: 4px solid #ff5534;
+  padding: 1px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.center a:hover, a:active {
+  background-color: #ff5534;
+}
+.containerA{
+    margin-left: 14px;
+  }
+
+.accordion {
+  background-color: #f26f63;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 98%;
+  border-bottom: 2px solid #f2f2f2;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+    margin: 8px;
+}
+
+
+.active, .accordion:hover {
+  background-color:#bfa78a ; 
+  
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+font-weight:bold;
+    color: #f2f2f2;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+.panel {
+  padding: 0 18px;
+  background-color:#191d26 ;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+ display: inline-block;
+}
+.panel p {
+    text-align: left;
+    margin: 15px;
 }
